@@ -1,4 +1,5 @@
 theme: jekyll-theme-slate
+title: Simon Gomez homepage
 plugins:
   - jekyll-relative-links
 relative_links:
