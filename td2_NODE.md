@@ -58,10 +58,10 @@ app.listen(port, () => {
 })
 ```
 
-## TD
 
-### Home Page
-### First API
+
+## Home Page
+## First API
 
 ```
 mkdir data
@@ -82,7 +82,7 @@ use modulo to get the word
 test in browser 
 
 
-### First Page
+## First Page
 
 1 create a form with an input
 2 on form submit, check if word match and return the result
