@@ -6,7 +6,7 @@
 2 mettre la sortie dans un fichier 
 3 ouvrir le fichier
 
-**sauvegarder les commandes dans un fichier **
+**sauvegarder les commandes dans un fichier**
 
 
 
@@ -16,7 +16,7 @@
 2 mettre la sortie dans un fichier 
 3 ouvrir le fichier
 
-**sauvegarder les commandes dans un fichier **
+**sauvegarder les commandes dans un fichier**
 
 ## Exercice 3
 
@@ -32,7 +32,7 @@
 2 mettre la sortie dans un fichier 
 3 ouvrir le fichier
 
-**sauvegarder les commandes dans un fichier **
+**sauvegarder les commandes dans un fichier**
 
 ## Bonus
 
