@@ -84,14 +84,15 @@ test in browser
 
 ### First Page
 
-create a form with an input
-on form submit, check if word match and return the result
+1 create a form with an input
+2 on form submit, check if word match and return the result
+
 TIPS :
 - word.split() method can split a word into an array of characters
--- $(“#id”) get an html element
--- $(“#id”).val() get an input value
--- $(“#id”).append(...) append something to a span
-- array.include(somevalue) allow to test if somevalue is part of the array
+  - $(“#id”) get an html element
+  - $(“#id”).val() get an input value
+  - $(“#id”).append(...) append something to a span
+  - array.include(somevalue) allow to test if somevalue is part of the array
 
 # Some consideration
 
