@@ -3,7 +3,7 @@
 ## instalation du HA PROXY
 
 ```
-sudo apt get install haproxy 
+sudo apt-get install haproxy 
 ```
 
 ## utilisation de HA PROXY
@@ -18,6 +18,6 @@ sudo apt get install haproxy
 ## utilisation d'un proxy nginx
 
 ```
-sudo apt get install nginx
+sudo apt-get install nginx
 ```
 
