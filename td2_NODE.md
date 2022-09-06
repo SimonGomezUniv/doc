@@ -77,15 +77,20 @@ iconv -f ISO-8859-15 -t UTF-8 liste_francais.txt -o liste_francais_utf8.txt
 - return the word on the /word endpoint
 
 TIPS :
-generate sead based on time
-use modulo to get the word
-test in browser 
+- generate sead based on time
+- use modulo to get the word
+- test in browser 
 
 
 ## First Page
 
-1 create a form with an input
-2 on form submit, check if word match and return the result
+1. setup a static folder (using express static middleware)
+2. create a HTML page served by the static server
+3. create a form with an input https://www.w3schools.com/html/html_forms.asp
+4. on form submit, check if word match and return the result and implement a simple motus algorythm :
+- if letter is part of the word and at the right place : background color : green
+- if letter is part of the word but not a the correct place : bacground color : orange
+- else if letter is not part of the word, no specific background color 
 
 TIPS :
 - word.split() method can split a word into an array of characters
@@ -101,12 +106,11 @@ it’s easy to test every letter
 **let’s do it server side !**
 
 # Some improvements
-- store CSS and JS localy
-- allow sead configuration
+- add CSS
+- split JS and CSS in dedicated page
+- store all CSS and JS localy
+- add an API to change the sead value
 - improve UI 
   - color
   - form control
   - button
-- score
-  - localstorage
-  - cookie
