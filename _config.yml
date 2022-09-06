@@ -1,5 +1,5 @@
 theme: jekyll-theme-slate
-title: Simon Gomez - Les microservices
+title: Simon Gomez - Microservices
 plugins:
   - jekyll-relative-links
 relative_links:
