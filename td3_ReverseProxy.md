@@ -53,7 +53,7 @@ TIPS :
 ### stickiness
 
 - configure a cookie to ensure stickiness
-- do a few request using your brother
+- do a few request using your browser
 - do a few request using your curl
 - explain the diference
 
@@ -65,4 +65,4 @@ TIPS :
 ```
 sudo apt-get install nginx
 ```
-setup a proxy
+setup a proxy using the documentation
