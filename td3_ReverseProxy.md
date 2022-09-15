@@ -10,10 +10,12 @@ sudo apt-get install haproxy
 
 ### setup
 
-1. add a new path in your motus app /port that return "MOTUS APP listening on port XXXX" with XXXX being the actual port
-2. use your motus app and make it listen on port 3000
+1. add a new path in your motus app /port that return "MOTUS APP listening on XXXX" with XXXX being the os and listening port
+exemple : MOTUS APP Listineing on Simon-Ubuntu port 3000
+3. use your motus app and make it listen on port 3000
 
 TIPS :
+- to get the os name https://nodejs.org/api/os.html#oshostname
 -to easily specify a port on launch :
 ```
  const port = process.env.PORT || 3000 
