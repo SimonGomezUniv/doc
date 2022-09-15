@@ -62,6 +62,14 @@ TIPS :
 
 ## Bonus
 
+### configure a haproxy to balance based on the path
+
+1. add another path /anotherport in your motus App
+2. configure the haproxy in order to have request /port that will go to your first server and request /anotherport that will go to the second
+
+TIPS :
+- you have to use acl in Haproxy
+
 ### utilisation d'un proxy nginx
 
 ```
