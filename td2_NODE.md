@@ -126,3 +126,7 @@ it’s easy to test every letter
   - color
   - form control
   - button
+
+TIPS : 
+- with a GET query, you can access the request param with the req.query object in JS
+- with a POST query, easiest way to get the parameters will be the middleware express-json 
