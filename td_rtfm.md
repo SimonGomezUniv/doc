@@ -1,22 +1,23 @@
 # Documentation 
 
-## initiate your documentation 
+## Initiate your documentation 
 
 - if not already done, initiate your git repository on github.com
 - commit  your motus App 
 - initiate your Readme.md
+
 it should have a least two sections : 
 -  an explanation of what the project do
 -  a technical explanation on how to RUN the project 
 
-## play with mermaild 
+## Play with mermaild 
 
 go to https://mermaid.live/
 
-### sequence diagram
+### Sequence diagram
 
-Create a sequence diagram explaining all the network request that will happen when someone play with your motus App
-Commit the Readme.md with this version of the diagram inside 
+- Create a sequence diagram explaining all the network request that will happen when someone play with your motus App
+- Commit the Readme.md with this version of the diagram inside 
 
 ## Score Management
 
@@ -24,7 +25,7 @@ Our Motus app is growing in popularity, and player want to keep track of their s
 We are in a micro-service course, we are going to build a dedicated micro-service for this feature
 
 
-### adding score management
+### Conception of the score management microservice
 
 Decide and document the API you will implement for your scoring system.
 This API has to be in a dedicated server and should not be implemented in the same codebase as the motus APP. 
