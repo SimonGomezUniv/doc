@@ -1,6 +1,6 @@
 # TD 2 Node JS 
 
-## project setup
+## Project setup
 
 install nodejs
 init project
@@ -35,14 +35,14 @@ server.listen(port, () => {
 
 ## Express & Morgan
 
-### install express & morgan
+### Install express & morgan
 
 ```
 npm install express
 npm install morgan
 ```
 
-### run express
+### Run express
 
 ```
 const express = require('express')
@@ -78,16 +78,18 @@ iconv -f ISO-8859-15 -t UTF-8 liste_francais.txt -o liste_francais_utf8.txt
 
 
 
-## improved Algorithm 
+## Improved Algorithm 
 
 - generate a random number which will change everyday and be the same all day long
 - use this number get the same word for a day
 - return the word on the /word endpoint
+- your algorithm does not need to be perfect, try to explain the liimitation
 
 TIPS :
-- generate seed based on time
+- generate a random based on time
 - use modulo to get the word
 - test in browser 
+
 
 
 ## First Page
