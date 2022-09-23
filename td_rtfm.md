@@ -47,10 +47,12 @@ All these information should be in your documentation
 ## Doc Done
 
 Now that the documentation is done, we can code the scoring App.
+The scoring app should be a dedicated node server distinct from the first one.
+the docker-compose file should allow you to deploy and run everything.
 
 TIPS :
 - storing data in a database is not mandatory (a flat file is ok) but would be better (depending on your progress on the project)
-
+- having a reverse proxy in your docker-compose, to only expose port 80 is a great idea but it is not mandatory 
 
 
 
