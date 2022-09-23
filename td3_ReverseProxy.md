@@ -34,7 +34,7 @@ TIPS :
 ### Another Server
 
 - configure a second motus running on port 4000
-- configure a second backend on your haproxy
+- configure a second server in the backend on your haproxy
 - do a few request on the URL /port ==> check that you can reach both server
 - kill one server ==> check that your application is still working on port 3001
 - relaunch the server
