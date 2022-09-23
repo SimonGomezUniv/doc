@@ -16,12 +16,14 @@ exemple : MOTUS APP Listineing on Simon-Ubuntu port 3000
 
 TIPS :
 - to get the os name https://nodejs.org/api/os.html#oshostname
--to easily specify a port on launch :
+- to easily specify a port on launch :
+
 ```
  const port = process.env.PORT || 3000 
  
  PORT=5000 node index.js
 ```
+
 
 
 ### Simple Use Case
