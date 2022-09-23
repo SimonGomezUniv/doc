@@ -10,7 +10,7 @@ it should have a least two sections :
 -  an explanation of what the project do
 -  a technical explanation on how to RUN the project 
 
-## Play with mermaild 
+## Play with mermaid 
 
 go to https://mermaid.live/
 
@@ -41,6 +41,8 @@ All these information should be in your documentation
 - Update the previous sequence diagram 
 - add another digram (graph diagram) which will represent your architecture
 - Commit this new documentation
+
+**call me to validate the diagrams and the documentation**
 
 ## Doc Done
 
