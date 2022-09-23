@@ -2,18 +2,38 @@
 
 ## add a local user management
 
-let's play with localstorare 
-test if user is connected and the player name
-if not connected, display form that request the name
-if connected, display the name and a logout button that remove the data from localstorage
+### localstorage
+let's play with localstorage
+when your motus APP is running in the browser, check if there is a username available in the localstorage
+- if so : use it to show the username
+- if not : redirect the user to a login page
 
-## add a new API 
+the login page will be a simple form asking for a name.
+When the login is input, store it in the localstorage and redirect to the main page
 
-this api has to implement the route /score that store the score for each user 
+- add a button on the main page that will handle a logout by removing the data from the localsorage
+
+- login & play 
+- close your browser
+- re open your browser, are you still log in ?
+
+### session storage
+
+- change your code to replace localstorage by session storage
+- login & play 
+- close your browser
+- re open your browser, are you still log in ?
+- go back to localstorage
+
+## keep the score
+
+to be able to test, you will need an easy method to change the current word
+
+we want to keep track of the following data
 - number of word guess
 - number of tentative for each diferent word
 
-in this exercice, we will not implement a database (we should)
-store this data in a file (JSON format)
+Store this data in the local storage
+create a score page that will display these data
 
 
