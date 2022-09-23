@@ -12,7 +12,7 @@ it should have a least two sections :
 
 ## Play with mermaid 
 
-go to https://mermaid.live/
+go to [https://mermaid.live/](https://mermaid.live/)
 
 ### Sequence diagram
 
