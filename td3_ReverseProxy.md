@@ -10,9 +10,16 @@ sudo apt-get install haproxy
 
 ### setup
 
-1. add a new path in your motus app /port that return "MOTUS APP listening on XXXX" with XXXX being the os and listening port
-exemple : MOTUS APP Listineing on Simon-Ubuntu port 3000
+1. add a new API in your motus app on the path **/port**
+- This API will return "MOTUS APP working on XXXX port YYYY" with XXXX being the os and YYYY the listening port
+
+exemple :
+```
+MOTUS APP working on Simon-Ubuntu port 3000
+```
+
 3. use your motus app and make it listen on port 3000
+4. spawn another instance on port 4000
 
 TIPS :
 - to get the os name https://nodejs.org/api/os.html#oshostname
@@ -33,7 +40,7 @@ TIPS :
 
 ### Another Server
 
-- configure a second motus running on port 4000
+
 - configure a second server in the backend on your haproxy
 - do a few request on the URL /port ==> check that you can reach both server
 - kill one server ==> check that your application is still working on port 3001
