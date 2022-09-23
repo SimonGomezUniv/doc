@@ -23,13 +23,14 @@
  4. exit te container
  5. stop the container
  6. create and run another postgres container
- 7. re-run request on point 3
+ 7. run the same request as point 3 in the new container
  8. Are the data lost ?
  9. display information about the first container : where are the data ?
  
  
  TIPS :
  - inside the container, psql is the command to connect
+ - docker exec can help
  - docker inspect can provide information
 
 ## Storing data 
