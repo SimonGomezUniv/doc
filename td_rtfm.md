@@ -10,6 +10,9 @@ it should have a least two sections :
 -  an explanation of what the project do
 -  a technical explanation on how to RUN the project 
 
+TIPS : 
+- markdonw cheatsheet   [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)
+
 ## Play with mermaid 
 
 go to [https://mermaid.live/](https://mermaid.live/)
@@ -21,8 +24,8 @@ go to [https://mermaid.live/](https://mermaid.live/)
 
 ## Score Management
 
-Our Motus app is growing in popularity, and player want to keep track of their score.
-We are in a micro-service course, we are going to build a dedicated micro-service for this feature
+Our Motus app is growing in popularity, and player want to keep track of their score on multiple device
+We are in a micro-service course, we are going to build a dedicated micro-service for this feature, and update our existing score management system
 
 
 ### Conception of the score management microservice
