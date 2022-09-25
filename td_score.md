@@ -27,13 +27,22 @@ When the login is input, store it in the localstorage and redirect to the main p
 
 ## keep the score
 
-to be able to test, you will need an easy method to change the current word
 
-we want to keep track of the following data
-- number of word guess
-- number of tentative for each diferent word
+### number of word guess
 
-Store this data in the local storage
-create a score page that will display these data
+First we want to display the number of word guess by the user
+
+When the user correctly guess a word, store this information in the local storage
+
+create a score page that will display the number of word guessed by the user
+
+TIPS : 
+- to be able to test, you will need an easy method to change the current word
+- make a dedicated API seems a great way to to this)
+
+### improve the score
+
+for each word guess we want to keep the number of try
+we want to display the average number of try in the score page
 
 
