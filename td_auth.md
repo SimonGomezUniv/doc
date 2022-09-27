@@ -53,7 +53,8 @@ create a register form that request a login and a password
 - if the login already exist, display an error message
 
 
-Test :
+## Test Everything together 
+
 - try connect with a non registered user 
 - ensure it fail
 - register the user
@@ -68,6 +69,16 @@ Test :
 
 if your password is stored in plain text, update your code to use a hash to store it.
 you can use sha256 with the crypto lib to store the password.
+
+
+## Bonus 
+
+In a PROD environment, you can andshould use a dedicated middleware instead of custom code to handle security.
+
+For a nodejs App, the passport library is a good implementation to look uppon [https://www.npmjs.com/package/passport](https://www.npmjs.com/package/passport) 
+
+For webaps, as seen in OWASP presentation, lots of risk are to be covered. A good starting point : [https://blog.risingstack.com/node-js-security-checklist/](https://blog.risingstack.com/node-js-security-checklist/)
+
 
 
 
