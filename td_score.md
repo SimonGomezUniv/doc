@@ -19,6 +19,14 @@ When the login is input, store it in the localstorage and redirect to the main p
 - Close your browser
 - Re-open your browser, are you still log in ?
 
+TIPS :
+```
+document.location = "/login.html" //will help you redirect the user on the client side
+localstorate.setItem("name", "Simon")
+console.log(localstorate.getItem("name") // to get a value
+```
+
+
 ### Session storage
 
 - Change your code to replace localstorage by session storage
