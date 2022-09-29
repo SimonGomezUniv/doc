@@ -11,7 +11,7 @@ it should have a least two sections :
 -  a technical explanation on how to RUN the project 
 
 TIPS : 
-- markdonw cheatsheet   [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)
+- markdown cheatsheet   [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)
 
 ## Play with mermaid 
 
