@@ -94,6 +94,6 @@ Follow the tutorial to set up your OpenID client https://auth0.com/docs/quicksta
 
 ## other provider
 
-- implement a login with goole of login with facebook
+- implement a login with google of login with facebook
 
 
