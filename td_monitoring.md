@@ -139,3 +139,58 @@ add the collect in your prometheus configuration
 
 graph all these information
 
+## Monitor Logs
+
+
+### setup install loki
+
+
+
+add loki to your docker compose 
+```
+  loki:
+    image: grafana/loki
+    container_name: loki
+    ports:
+      - 3100:3100
+    restart: unless-stopped
+    networks:
+      - monitor-net
+```
+
+### add some logs in your app
+
+
+add winston and wondston-loki package via npm install 
+
+#### setup the winston configuration 
+
+```
+
+const loki_uri = process.env.LOKI || "http://127.0.0.1:3100";
+
+
+const { createLogger, transports } = require("winston");
+const LokiTransport = require("winston-loki");
+const options = {
+  transports: [
+    new LokiTransport({
+      host: loki_uri
+    })
+  ]
+};
+
+```
+
+#### setup some logs in your app
+
+```
+  logger.info({ message: 'URL '+req.url , labels: { 'url': req.url } })
+
+```
+
+#### try it out 
+
+add loki datasource in your grafana
+go to the explore panel
+try to find your logs
