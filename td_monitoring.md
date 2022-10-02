@@ -1,5 +1,6 @@
 # Monitoring your applications
 
+# Monitor Logs
 
 ## step 1 : install grafana 
 
@@ -20,8 +21,63 @@ grafana:
 
 check that grafana is working by connecting on localhost:3000, default password should be admin/admin
 
+### step2 : install loki
 
-## step 2 : install prometheus
+
+
+add loki to your docker compose 
+```
+  loki:
+    image: grafana/loki
+    container_name: loki
+    ports:
+      - 3100:3100
+    restart: unless-stopped
+    networks:
+      - monitor-net
+```
+
+### step 3 : add some logs in your app
+
+
+add winston and wondston-loki package via npm install 
+
+#### setup the winston configuration 
+
+```
+
+const loki_uri = process.env.LOKI || "http://127.0.0.1:3100";
+
+
+const { createLogger, transports } = require("winston");
+const LokiTransport = require("winston-loki");
+const options = {
+  transports: [
+    new LokiTransport({
+      host: loki_uri
+    })
+  ]
+};
+
+```
+
+#### setup some logs in your app
+
+```
+  logger.info({ message: 'URL '+req.url , labels: { 'url': req.url } })
+
+```
+
+#### try it out 
+
+add loki datasource in your grafana
+go to the explore panel
+try to find your logs
+
+
+# Add some Metrics
+
+## step 1 : install prometheus
 
 
 ### add prometheus to your dockercompose
@@ -68,7 +124,7 @@ scrape_configs:
  - add the prometheus instance as a datasource (You should see "Data source is working" in your grafana interface
 
  
- ## step 3 : add the node exporter to monitor your system
+ ## step 2: add the node exporter to monitor your system
  
  
  add a node exporter instance in your dockercompose file 
@@ -115,7 +171,7 @@ scrape_configs:
   - look a the graph
   
  
-  ## step 4 : add metrics in your application 
+  ## step 3 : add metrics in your application 
   
   
   add an API /metrics in your motus app
@@ -139,58 +195,3 @@ add the collect in your prometheus configuration
 
 graph all these information
 
-## Monitor Logs
-
-
-### setup install loki
-
-
-
-add loki to your docker compose 
-```
-  loki:
-    image: grafana/loki
-    container_name: loki
-    ports:
-      - 3100:3100
-    restart: unless-stopped
-    networks:
-      - monitor-net
-```
-
-### add some logs in your app
-
-
-add winston and wondston-loki package via npm install 
-
-#### setup the winston configuration 
-
-```
-
-const loki_uri = process.env.LOKI || "http://127.0.0.1:3100";
-
-
-const { createLogger, transports } = require("winston");
-const LokiTransport = require("winston-loki");
-const options = {
-  transports: [
-    new LokiTransport({
-      host: loki_uri
-    })
-  ]
-};
-
-```
-
-#### setup some logs in your app
-
-```
-  logger.info({ message: 'URL '+req.url , labels: { 'url': req.url } })
-
-```
-
-#### try it out 
-
-add loki datasource in your grafana
-go to the explore panel
-try to find your logs
