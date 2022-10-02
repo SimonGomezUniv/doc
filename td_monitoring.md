@@ -110,8 +110,32 @@ scrape_configs:
   - new dashboard
   - new panel
   - use your prometheus datasource
-  - graphe :  promhttp_metric_handler_requests_total
-  
+  - graph :  promhttp_metric_handler_requests_total
+  - stop the node exporter
+  - look a the graph
   
  
- 
+  ## step 4 : add metrics in your application 
+  
+  
+  add an API /metrics in your motus app
+  This API will return prometheus format metrics with the number of request done and the number of successful authentication
+  Here is an example :
+  
+  ```
+  http_requests_total XX
+  login_total YY
+  ```
+
+
+add the collect in your prometheus configuration 
+
+```
+  - job_name: "mynode"
+    scrape_interval: 10s
+    static_configs:
+    - targets: ["mynodeapp:4000"]
+```
+
+graph all these information
+
