@@ -21,8 +21,7 @@ grafana:
 
 check that grafana is working by connecting on localhost:3000, default password should be admin/admin
 
-### step2 : install loki
-
+## step 2 : install loki
 
 
 add loki to your docker compose 
@@ -37,12 +36,12 @@ add loki to your docker compose
       - monitor-net
 ```
 
-### step 3 : add some logs in your app
+## step 3 : add some logs in your app
 
 
 add winston and wondston-loki package via npm install 
 
-#### setup the winston configuration 
+### Setup the winston configuration 
 
 ```
 
@@ -61,14 +60,14 @@ const options = {
 
 ```
 
-#### setup some logs in your app
+#### Setup some logs in your app
 
 ```
-  logger.info({ message: 'URL '+req.url , labels: { 'url': req.url } })
+  logger.info({ message: 'URL '+req.url , labels: { 'url': req.url, 'user':username } })
 
 ```
 
-#### try it out 
+#### Try it out 
 
 add loki datasource in your grafana
 go to the explore panel
