@@ -21,9 +21,9 @@ après avoir installer nodejs, l'outil de gestion de package npm doit être disp
 - morgan
 
 ```
-npm install -g express
-npm install -g morgan
-npm install -g ejs
+npm install express
+npm install morgan
+npm install ejs
 ```
 
 ### instalation via docker 
