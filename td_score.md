@@ -10,7 +10,7 @@ Info | Value
 Nb Word(s) found        | 42
 Average try       | data  
 
-### Step 1 : page creation
+### Page creation
 
 In this step, the score should be empty
 create a score.html page
@@ -73,3 +73,4 @@ document.location = "/login.html" //will help you redirect the user on the clien
 localstorate.setItem("name", "Simon")
 console.log(localstorate.getItem("name") // to get a value
 ```
+ 
