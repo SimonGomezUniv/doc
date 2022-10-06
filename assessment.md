@@ -8,9 +8,11 @@ The unit will allow you to progressivly build a web application using a microser
 
 Work will be done in teams of two or three.
 
-Team has to provide by mail a link to a github repository at the end of the 6th day of the unit
+Team has to provide by mail a link to a github repository.
 
-Target is to have the following functionnality implemented in a microservice architecture:
+It should be finished at the end of the 6th day of the unit.
+
+Target is to have the following functionnalities implemented in a microservice architecture:
 - a working motus game 
 - a scoring system
 - an authentication system
