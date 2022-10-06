@@ -45,7 +45,7 @@ All these information should be in your documentation
 - add another digram (graph diagram) which will represent your architecture
 - Commit this new documentation
 
-**call me to validate the diagrams and the documentation**
+**Send me by mail your github repository with the diagrams and the documentation** (one mail by team)
 
 ## Doc Done
 
