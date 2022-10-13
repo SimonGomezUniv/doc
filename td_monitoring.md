@@ -39,7 +39,7 @@ add loki to your docker compose
 ## step 3 : add some logs in your app
 
 
-add winston and wondston-loki package via npm install 
+add winston and windston-loki package via npm install 
 
 ### Setup the winston configuration 
 
