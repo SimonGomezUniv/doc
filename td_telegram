@@ -1,0 +1,23 @@
+# TD bot Telegram / MOTUS
+
+## Step 1 : Create your Bot
+
+connect to Telegram and https://t.me/botfather
+
+generate new bot and get token API : XXXXXXXXXXXX
+
+## create a dedicated nodejs WebApp
+
+
+We are going to use Telegraf library to handle our telegram bot https://telegraf.js.org/
+
+Target i to have the following behavior with the bot :
+
+- when command start is launch, it will display the word size
+- when a word will be send it will be compare to the current word and if len match a status will be return by telegram Bot
+
+tips 
+- bot.hears(/(\S+)/, ctx =>{}) allow to get the current input by the user
+
+
+
