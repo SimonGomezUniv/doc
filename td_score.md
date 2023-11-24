@@ -8,7 +8,7 @@ target is to have a score page displaying the following information
 Info | Value
 -------------|---------------
 Nb Word(s) found        | 42
-Average try       | data  
+Average try       | 3.5  
 
 ### Page creation
 
