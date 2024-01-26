@@ -37,23 +37,13 @@ GET URL
  - docker inspect can provide information
  - try to run the query from inside and outside the container
 
-## Storing data 
-
-1. Create a volume named postgres_data
-2. Launch a first container called postgres_c_1 based on the official postgresql image and attach postgres_data to it.
-3. create table users (same as previous)
-4. Exit your container and then delete it
-5. Run another container called postgres_c_2 and attach postgres_data to it.
-6. Log into postgres_c_2 and try to query the table users.
-7. Eventhough you destroyed the container that created the initial data, have you lost your db?
-
 
 ## Image creation
 
 docker is great, how do i package my Motus in docker ?
 
 1. Create a Dockerfile
-2. Find a suitable base image
+2. Find a suitable base image (base linux or base node)
 3. Install the right dependencies
 4. Run the right command to make it work locally!
 
@@ -61,40 +51,30 @@ docker is great, how do i package my Motus in docker ?
 ## Docker Compose - step 1
 
 the great recipe
-goal is to have a PostgreSQL database and NocoDB interface running at once.
-NocoDB is an open source interface to connect to any sql DB, allowing to store and manage data. 
+goal is to have a Redis database and Redis insight interface running at once.
+Redis insight is a web UI to connect to Redis, allowing to manage the database. 
 
 Write a Docker-Compose with two services
-- postgres for the db
-- no_codb for the interface
+- redis for the db
+- redisinsight for the interface
 
-### NocoDB
+### Redis insight
 
-1. Pull up the nocodb images
-2. Open a port mapping: 8080:8080
-3. Make it dependant on: postgres service
+1. Pull up the redisinsight images
+2. setup a port mapping: 8001
+3. Make it dependant on: redis service
 4. Always restart service if anything happens
-5. Create a volume called nc_data and attach it at this location: /usr/app/data
-6. Define an environment variable called NC_DB with the path corresponding to your db.
- - pg://host.docker.internal:5432?u=postgres&p=postgres&d=root_db
+5. Create a volume called /db and attach it at this location: ./data/redisinsight
+it will store the database configuration for your redis insight
 
-Note :
-- 5432 corresponds to the port of your db
-- u means username
-- p means password
-- d means db
 
-### Postgres
+### Redis
 
-1. Pull up the postgres images
-2. Open port mapping 5432:5432
-3. Define the env variables
-- POSTGRES_DB
-- POSTGRES_PASSWORD
-- POSTGRES_USER
-4. Create a volume called postgres_data and attach it at this location: /var/lib/postgresql/data:rw
+1. Pull up the latest redis images
+2. Setup a port mapping 6379
+3. Create a volume called /data and attach it at this location: ./data/redis
 
-Test your interface on [http://localhost:8080](http://localhost:8080)
+Test your interface on [http://localhost:8001](http://localhost:8001)
 
 
 ## Docker Compose - step 2
