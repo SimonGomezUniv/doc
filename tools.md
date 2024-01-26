@@ -18,19 +18,23 @@ les outils suivants vont être utilisés pendant les deux premières journée :
 après avoir installer nodejs, l'outil de gestion de package npm doit être disponible 
 
 - express
-- morgan
+- express-session
+- jsonwebtoken
 
 ```
+cd /myWorkDir/src
+mkdir microservice
+cd microservice
 npm install express
-npm install morgan
-npm install ejs
+npm install express-session
+npm install jsonwebtoken
 ```
 
 ### instalation via docker 
 
 ```
-docker pull postgres
-docker pull nocodb/nocodb
+docker pull redis
+docker pull redisinsight
 ```
 
 ### IDE
