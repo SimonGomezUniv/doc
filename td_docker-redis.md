@@ -10,8 +10,8 @@ SET firstname "Randal"
 SET lastname "Munroe"
 SET URL "https://xkcd.com/1988/" EX 60
 ```
-
 3. query the data you ve just inserted
+
 ```
 redis-cli
 
