@@ -1,6 +1,6 @@
-# Authentication in MOTUS app
+# Authentication app
 
-Goal of this TD is to implement a simple authentication in your motus APP
+Goal of this TD is to implement a simple authentication in a new nodejs App
 
 we are going to follow the express good practice regarding this topic :
 [http://expressjs.com/en/advanced/best-practice-security.html#dont-use-the-default-session-cookie-name](http://expressjs.com/en/advanced/best-practice-security.html#dont-use-the-default-session-cookie-name)
@@ -49,7 +49,7 @@ TIPS :
 
 allow your user to register 
 create a register form that request a login and a password
-- if login does not exist in your referentiel, add the login/password to your storage (variabel / flat file/ database)
+- if login does not exist in your referentiel, add the login/password to your storage (variable / flat file/ database)
 - if the login already exist, display an error message
 
 
@@ -73,11 +73,11 @@ you can use sha256 with the crypto lib to store the password.
 
 ## Bonus 
 
-In a PROD environment, you can andshould use a dedicated middleware instead of custom code to handle security.
+In a PROD environment, you can and should use a dedicated middleware instead of custom code to handle security.
 
 For a nodejs App, the passport library is a good implementation to look uppon [https://www.npmjs.com/package/passport](https://www.npmjs.com/package/passport) 
 
-For webaps, as seen in OWASP presentation, lots of risk are to be covered. A good starting point : [https://blog.risingstack.com/node-js-security-checklist/](https://blog.risingstack.com/node-js-security-checklist/)
+For webaps, lots of risk are to be covered. A good starting point : [https://blog.risingstack.com/node-js-security-checklist/](https://blog.risingstack.com/node-js-security-checklist/)
 
 
 
