@@ -24,14 +24,10 @@ go to [https://mermaid.live/](https://mermaid.live/)
 
 ## Score Management
 
-Our Motus app is growing in popularity, and player want to keep track of their score on multiple device
-We are in a micro-service course, we are going to build a dedicated micro-service for this feature, and update our existing score management system
 
-
-### Conception of the score management microservice
-
-Decide and document the API you will implement for your scoring system.
-This API has to be in a dedicated server and should not be implemented in the same codebase as the motus APP. 
+Document the API you will implement for your scoring system.
+T
+his API has to be in a dedicated server and should not be implemented in the same codebase as the motus APP. 
 You should be able to document in your Readme the answer to the following questions :
 - which server are you gone use ? 
 - which port are you gone use ?
@@ -49,7 +45,7 @@ All these information should be in your documentation
 
 ## Doc Done
 
-Now that the documentation is done, we can code the scoring App.
+Now that the documentation is done,ensure that everything is working correctly..
 The scoring app should be a dedicated node server distinct from the first one.
 the docker-compose file should allow you to deploy and run everything.
 
