@@ -2,13 +2,19 @@
 
 Goal of this TD is to implement a simple authentication in a new nodejs App
 
-we are going to follow the express good practice regarding this topic :
-[http://expressjs.com/en/advanced/best-practice-security.html#dont-use-the-default-session-cookie-name](http://expressjs.com/en/advanced/best-practice-security.html#dont-use-the-default-session-cookie-name)
-
 Target is to have : 
 - a login form
-- a register form
 
+--- | --- 
+**Login** |  
+**Password** |  
+  
+- a register form
+--- | --- 
+**Login** |  
+**Password** |
+**Password** |
+  
 ## Step 1 : session management
 
 set up a session management using the express-session middleware
@@ -20,6 +26,8 @@ TIPS :
 - you can use JSON.stringify to display information
 - session is available on the server side : req.session
 
+it could be a good idea to follow the express good practice regarding the session :
+[http://expressjs.com/en/advanced/best-practice-security.html#dont-use-the-default-session-cookie-name](http://expressjs.com/en/advanced/best-practice-security.html#dont-use-the-default-session-cookie-name)
 
 ## Step 2 : login form
 
