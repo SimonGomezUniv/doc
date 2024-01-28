@@ -6,14 +6,15 @@ Target is to have :
 - a login form
 
 --- | --- 
-**Login** |  
-**Password** |  
+**Login** |  *simon.gomez*
+**Password** | ********** 
   
 - a register form
+  
 --- | --- 
-**Login** |  
-**Password** |
-**Password** |
+**Login** |  *simon.gomez*
+**Password** | **********
+**Password** | **********
   
 ## Step 1 : session management
 
