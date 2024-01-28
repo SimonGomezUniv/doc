@@ -54,7 +54,12 @@ TIPS :
 - having a reverse proxy in your docker-compose, to only expose port 80 is a great idea but it is not mandatory 
 
 
+## Microservice pattern
 
+Now be creative ! 
+We have seen a few microservices pattern, pick one or more to implement in your application.
+
+Start with the documentation, and then just code.
 
 
 
