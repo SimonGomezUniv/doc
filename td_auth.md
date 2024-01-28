@@ -5,12 +5,14 @@ Goal of this TD is to implement a simple authentication in a new nodejs App
 Target is to have : 
 - a login form
 
+|                  
 --- | --- 
 **Login** |  *simon.gomez*
 **Password** | ********** 
   
 - a register form
-  
+
+|                  
 --- | --- 
 **Login** |  *simon.gomez*
 **Password** | **********
