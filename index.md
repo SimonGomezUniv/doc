@@ -13,7 +13,7 @@ Slides - [Here](/presentation/)
 - [TD Score](/td_score)
 - [TD Doc](/td_rtfm)
 - [TD auth](/td_auth)
-- [TD_oauth2](/td_oauth2)
+- [TD oauth2](/td_oauth2)
 - [TD monitoring](/td_monitoring)
 
 # Assessment 
