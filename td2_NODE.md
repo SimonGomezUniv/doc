@@ -33,13 +33,12 @@ server.listen(port, () => {
 ```
 
 
-## Express & Morgan
+## Express 
 
-### Install express & morgan
+### Install express 
 
 ```
 npm install express
-npm install morgan
 ```
 
 ### Run express
