@@ -34,7 +34,7 @@ npm install jsonwebtoken
 
 ```
 docker pull redis
-docker pull redisinsight
+docker pull redislabs/redisinsight 
 ```
 
 ### IDE
