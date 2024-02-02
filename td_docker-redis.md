@@ -79,10 +79,16 @@ Test your interface on [http://localhost:8001](http://localhost:8001)
 
 ## Docker Compose - step 2
 
-Let's apply this to the motus project 
+### Let's apply this to the motus project 
 
 1. Create a Docker-compose file in your motus App folder
 2. import your docker image
 3. Run your docker-compose file
+
+### some load balancing 
+
+1. add an haproxy loadbalancer in your project via a dockerfile
+2. setup the docker-compose to have two instance of your app running and a loadbalancer up front to distribute request between the two instances
+
 
 You will improve this Docker-compose later on 
