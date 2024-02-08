@@ -100,7 +100,7 @@ TIPS :
 
 1. setup a **static folder** using express static middleware
 2. create a HTML page served by the static server
-3. create a form with an input [](https://www.w3schools.com/html/html_forms.asp)
+3. create a form with an input [https://www.w3schools.com/html/html_forms.asp](https://www.w3schools.com/html/html_forms.asp)
 4. on form submit, check if word match and return the result and implement a simple motus algorythm :
 - if letter is part of the word and at the right place : background color : green
 - if letter is part of the word but not a the correct place : bacground color : orange
@@ -113,7 +113,7 @@ TIPS :
   - $(“#id”).append(...) append something to a span
   - array.include(somevalue) allow to test if somevalue is part of the array
   - 
-  - check event prevent default for the form submission [](https://www.w3schools.com/jsref/event_preventdefault.asp)
+  - check event prevent default for the form submission [https://www.w3schools.com/jsref/event_preventdefault.asp](https://www.w3schools.com/jsref/event_preventdefault.asp)
   - $.get('/word', (data)=> {console.log(data)}) is an easy way to do some request from the browser 
 
 
