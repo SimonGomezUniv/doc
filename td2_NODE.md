@@ -1,9 +1,4 @@
- du non affichage du bouton Partie de la veille
-Ajustement de la hauteur du jeu sur certains téléphones
-Correction de la couleur de la longue barre des statistiques
-Ajout des couleurs dans les stats pour les terminaux sans emoji
-Correction d'une coquille dans les options
-Résolution d'un problème de selection de texte sur le clavier# TD 2 Node JS 
+# TD 2 Node JS 
 
 ## Project setup
 
