@@ -94,7 +94,7 @@ TIPS :
 
 ## First Page
 
-1. setup a **static folder** using express static middleware
+1. setup a **static folder** using express static middleware [https://expressjs.com/fr/starter/static-files.html](https://expressjs.com/fr/starter/static-files.html)
 2. create a HTML page served by the static server
 3. create a form with an input [https://www.w3schools.com/html/html_forms.asp](https://www.w3schools.com/html/html_forms.asp)
 4. on form submit, check if word match and return the result and implement a simple motus algorythm :
