@@ -73,6 +73,7 @@ iconv -f ISO-8859-15 -t UTF-8 liste_francais.txt -o liste_francais_utf8.txt
 
 - read the word list and store it in an array variable
 - create an API /word which will return the 127e word of the list
+- use your browser or `curl localhost:3000/word` to check that your API is working
 
 
 
