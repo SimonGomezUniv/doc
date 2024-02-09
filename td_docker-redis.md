@@ -32,10 +32,10 @@ GET URL
  
  
  TIPS :
- - inside the container, psql is the command to connect
+ - inside the container, redis-cli is the command to connect
  - docker exec can help
  - docker inspect can provide information
- - try to run the query from inside and outside the container
+ - try to connect to Redis from inside and outside the container
 
 
 ## Image creation
