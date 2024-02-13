@@ -18,23 +18,25 @@ we are going to build a new app in charge tracking score. This app will only han
 - /setscore : which will record the score for a player
 - /getscore : which will display the score of a player
 
+Be careful of when to call the API, when user input a word, when he found today's word.
+
 Set up both these API in a new and dedicated nodejs app :
 - move your existing App in a repository 
 - create a new directory and develop your app in this directory
 
-You can store the data in a flat file or (better) in a dedicated database (Redis, Mysql, PostGres,...).
-
+You can store the data in a flat file or but it would be far better to store it in a dedicated database (ex Redis).
+You can use the documentation available here [https://redis.io/docs/connect/clients/nodejs/](https://redis.io/docs/connect/clients/nodejs/)
 
 ### Track the score (API calls)
 
-During the game, ensure that when needed the Api setscore is called to record the player score
+During the game, ensure that when needed the Api setscore is called to record the player score and number of try.
 
 ### Page creation
 
-create a score.html page in your motus page
+create a score.html page in your motus page or in your score App
 add a link in your main page and a link to go back to the main game page in the score page 
 
-This page should call your API getscore to be alble to display the score information
+This page should display the score information
 
 TIPS :
 
