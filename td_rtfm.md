@@ -26,8 +26,7 @@ go to [https://mermaid.live/](https://mermaid.live/)
 
 
 Document the API you will implement for your scoring system.
-T
-his API has to be in a dedicated server and should not be implemented in the same codebase as the motus APP. 
+This API has to be in a dedicated server and should not be implemented in the same codebase as the motus APP. 
 You should be able to document in your Readme the answer to the following questions :
 - which server are you gone use ? 
 - which port are you gone use ?
@@ -57,7 +56,14 @@ TIPS :
 ## Microservice pattern
 
 Now be creative ! 
-We have seen a few microservices pattern, pick one or more to implement in your application.
+We have seen a few microservices pattern, pick one or more to implement in your application :
+- loadbalancing
+- API Gateway
+- BFF/BFB
+- CQRS
+- Service Discovery
+- Throttling
+  
 
 Start with the documentation, and then just code.
 
