@@ -21,6 +21,7 @@ grafana:
 
 check that grafana is working by connecting on localhost:3000, default password should be admin/admin
 
+
 ## step 2 : install loki
 
 
