@@ -25,7 +25,9 @@ Set up both these API in a new and dedicated nodejs app :
 - create a new directory and develop your app in this directory
 
 You can store the data in a flat file or but it would be far better to store it in a dedicated database (ex Redis).
-You can use the documentation available here [https://redis.io/docs/connect/clients/nodejs/](https://redis.io/docs/connect/clients/nodejs/)
+You can use the documentation available here 
+[https://redis.io/docs/connect/clients/nodejs/](https://redis.io/docs/connect/clients/nodejs/)
+[https://flaviocopes.com/how-to-use-redis-nodejs/](https://flaviocopes.com/how-to-use-redis-nodejs/)
 
 ### Track the score (API calls)
 
