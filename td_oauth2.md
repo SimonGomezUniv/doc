@@ -23,7 +23,7 @@ TIPS :
 
 ## Step 2 : intiate the OpenID provider
 
-create a new nodejs app
+update your auth microservice app
 
 ensure that the autorize URL is working :
 - it should control the client ID : wrong clientid => error
