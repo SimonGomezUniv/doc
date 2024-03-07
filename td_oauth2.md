@@ -69,12 +69,6 @@ finalise the redirect_uri implementation by
 - parsing the id_token (jwt format you ve just generated))
 - seting the user in the session
 
-## Automatisation
-
-integrate this new server in a DockerFile
-
- create a DockerCompose that run both server
-
 
 ## Documentation
 
